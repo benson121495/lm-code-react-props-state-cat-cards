@@ -1,5 +1,5 @@
 import Cat from './cat';
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const catData : Array<Cat> = [
@@ -82,6 +82,6 @@ const catData : Array<Cat> = [
         birthYear: 2016,
     }
 ];
-// catData.forEach(cat => cat.id = uuidv4());
+catData.forEach(cat => cat.id = uuidv4());
 console.log(catData); 
 export default catData;
